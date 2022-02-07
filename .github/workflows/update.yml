@@ -15,11 +15,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.9.1
-      - run: |-
-          yarn install --inline-builds
+      - name: Install dependencies
+	uses: tj-actions/puppeteer@v3.2
+	with:
+	  args: yarn install
       - name: Update user directory
-        run: |-
-          yarn start
+       	uses: tj-actions/puppeteer@v3.2
+	args: yarn start
       - name: Get current time
         uses: 1466587594/get-current-time@v2
         id: current-time
