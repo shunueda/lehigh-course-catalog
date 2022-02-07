@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16.9.1
       - run: |-
-          yarn
+          yarn cache clean && yarn upgrade && yarn
       - name: Update user directory
         run: |-
           yarn start
