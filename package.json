@@ -38,5 +38,6 @@
     "lint": "eslint src/*.ts --fix && prettier src/*.ts --write",
     "test": "tsc && yarn start",
     "start": "tsc && node --no-warnings --experimental-json-modules dist/index.js"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
