@@ -21,7 +21,7 @@ const status = new Array(THREADS).fill(false);
 for (let i = 0; i < THREADS; i++) {
   browsers.push(
     await puppeteer.launch({
-      headless: false,
+      headless: true,
     })
   );
 }
