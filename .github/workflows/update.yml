@@ -20,7 +20,7 @@ jobs:
         with:
           args: yarn install
       - name: Update user directory
-       	uses: tj-actions/puppeteer@v3.2
+        uses: tj-actions/puppeteer@v3.2
         with:
           args: yarn start
       - name: Get current time
